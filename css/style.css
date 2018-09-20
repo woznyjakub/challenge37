@@ -516,9 +516,8 @@ body::-webkit-scrollbar-thumb {
 .about-us__triangle {
     left: 100%;
     top: 0;
-    /* half of diagonal ~~ 40vw */
-    width: calc(80vw * .705);
-    height: calc(80vw * .705);
+    width: 56.4vw;
+    height: 54.6vw;
     background-color: #171717;
     z-index: -1;
 }
@@ -1503,6 +1502,13 @@ body::-webkit-scrollbar-thumb {
 
 .contact__type {
     font-weight: 800;
+}
+
+/* Safari fix */
+.contact__content1,
+.contact__content2 {
+    color: #fff;
+    text-decoration: none;
 }
 
 .contact__icon-wrapper {
