@@ -140,12 +140,6 @@ body::-webkit-scrollbar-thumb {
     transition: top .1s ease-out, transform .3s .2s ease;
 }
 
-@keyframes hamburgerClose {
-    25% {
-        top: calc(50% - 2px);
-    }
-}
-
 .nav__list {
     flex-basis: 100%;
     display: flex;
@@ -243,11 +237,6 @@ body::-webkit-scrollbar-thumb {
         padding: 0;
     }
 
-    .header__slogan {
-        top: 14%;
-        font-size: 132px;
-    }
-
     .nav__list-item {
         cursor: pointer;
     }
@@ -268,7 +257,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url('../img/city-red.png') 50% 50% / cover;
+    background: 50% 50% / cover;
     z-index: -1;
 }
 
@@ -279,7 +268,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url('../img/city.png') 50% 50% / cover;
+    background: 50% 50% / cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -329,6 +318,26 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     color: #111;
     z-index: 2;
+}
+
+@media (orientation:portrait) and (max-width:767px) {
+    .header::before {
+        background-image: url('../img/city-red__mobile.jpg');
+    }
+
+    .header__slogan-wrapper {
+        background-image: url('../img/city__mobile.jpg');
+    }
+}
+
+@media (orientation:landscape) and (max-height:499px) {
+    .header::before {
+        background-image: url('../img/city-red__mobile-land.jpg');
+    }
+
+    .header__slogan-wrapper {
+        background-image: url('../img/city__mobile-land.jpg');
+    }
 }
 
 @media (orientation: landscape) {
@@ -401,6 +410,16 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media (min-width:768px) and (min-height:500px) and (max-width:1023px) {
+    .header::before {
+        background-image: url('../img/city-red__tab.jpg');
+    }
+
+    .header__slogan-wrapper {
+        background-image: url('../img/city__tab.jpg');
+    }
+}
+
 @media (min-width:768px) and (min-height:500px) {
     .header__slogan {
         margin-top: 15%;
@@ -439,6 +458,17 @@ body::-webkit-scrollbar-thumb {
         top: 28%;
         width: 100%;
     }
+}
+
+@media (min-width:1024px) {
+    .header::before {
+        background-image: url('../img/city-red__desktop.jpg');
+    }
+
+    .header__slogan-wrapper {
+        background-image: url('../img/city__desktop.jpg');
+    }
+
 }
 
 @media (min-width:1280px) {
@@ -1473,7 +1503,7 @@ body::-webkit-scrollbar-thumb {
 
 /* FOOTER (CONTACT) */
 .contact {
-    background: url('../img/sitting-people.png') 50% 50% / cover;
+    background: 50% 50% / cover;
     color: #fff;
     font-family: 'open sans', Arial, Helvetica, sans-serif;
     padding: 0 5vw;
@@ -1544,6 +1574,18 @@ body::-webkit-scrollbar-thumb {
         left: -2.3em;
         top: 2em;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width:1023px) {
+    .contact {
+        background-image: url('../img/sitting-people-mobile.jpg');
+    }
+}
+
+@media (min-width:1024px) {
+    .contact {
+        background-image: url('../img/sitting-people.jpg');
     }
 }
 
