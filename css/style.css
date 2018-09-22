@@ -1143,6 +1143,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 14px;
     font-family: 'open sans', Arial, Helvetica, sans-serif;
     font-weight: 800;
+    white-space: nowrap;
+    text-overflow: clip;
 }
 
 .team__carousel-item-description-wrapper {
