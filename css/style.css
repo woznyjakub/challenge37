@@ -17,8 +17,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container {
-    max-width: 1920px;
-    margin: 0 auto;
     overflow-x: hidden;
 }
 
@@ -492,6 +490,16 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media (min-width:1346px)and (max-width:1386px) and (min-height:900px) {
+    .header__slogan {
+        margin-top: 22%;
+    }
+
+    .header__main-image {
+        left: 42%;
+    }
+}
+
 @media (min-width:1440px) {
     .header__slogan {
         max-width: 55vw;
@@ -514,9 +522,21 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (min-width:1920px) {
+@media (min-width:1820px) {
     .header__slogan {
         font-size: 185px;
+    }
+}
+
+@media (min-width:2300px) {
+    .header__slogan {
+        font-size: 230px;
+    }
+}
+
+@media (min-width:3000px) {
+    .header__slogan {
+        font-size: 340px;
     }
 }
 
@@ -658,9 +678,19 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (min-width:1920px) {
+@media (min-width:1620px) {
     .about-us__macbook {
         width: 35vw;
+    }
+}
+
+@media (min-width:2300px) {
+    .about-us {
+        padding-bottom: 5vw;
+    }
+
+    .about-us__description {
+        font-size: 24px;
     }
 }
 
@@ -795,16 +825,6 @@ body::-webkit-scrollbar-thumb {
     .services__description {
         padding: 0 0 0 6.75em;
         text-align: left;
-    }
-}
-
-@media (min-width:1346px)and (max-width:1386px) and (min-height:900px) {
-    .header__slogan {
-        margin-top: 22%;
-    }
-
-    .header__main-image {
-        left: 42%;
     }
 }
 
@@ -967,7 +987,6 @@ body::-webkit-scrollbar-thumb {
     }
 
     .process__image {
-        background-color: #fff;
         margin-left: -100px;
     }
 
@@ -1043,9 +1062,27 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (min-width:1920px) {
+@media (min-width:1820px) {
     .process__rhombus-text {
         padding: 0 50px;
+    }
+}
+
+@media (min-width: 2300px) {
+    .process__description {
+        font-size: 24px;
+    }
+
+    .process__text-wrapper {
+        width: 120%;
+    }
+
+    .process__subheading {
+        font-size: 56px;
+    }
+
+    .process__rhombus-text {
+        font-size: 30px;
     }
 }
 
@@ -1296,6 +1333,14 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media (min-width:2300px) {
+
+    .team__carousel-item-name-wrapper,
+    .team__carousel-item-description-wrapper {
+        padding: 4px 0;
+    }
+}
+
 /* SECTION 5 'TESTIMONIALS' (CLIENTS) */
 .testimonials {
     position: relative;
@@ -1503,6 +1548,14 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media (min-width:2300px) {
+
+    .testimonials__quote,
+    .testimonials__author {
+        font-size: 24px;
+    }
+}
+
 /* FOOTER (CONTACT) */
 .contact {
     background: 50% 50% / cover;
@@ -1534,13 +1587,6 @@ body::-webkit-scrollbar-thumb {
 
 .contact__type {
     font-weight: 800;
-}
-
-/* Safari fix */
-.contact__content1,
-.contact__content2 {
-    color: #fff;
-    text-decoration: none;
 }
 
 .contact__icon-wrapper {
